@@ -10,7 +10,7 @@ author: gregorherda
 
 # About me
 
-I am an urban planner and GIS specialist with experience in preparing and implementing urban infrastructure projects covering, among others, social housing, urban transport, and WASH in South and South-East Asia (Asian Infrastructure Investment Bank) as well as affordable housing and resource efficiency in buildings (UN-Habitat HQ and Delhi Office). Additional qualifications in Public Financial Management (SOAS), Developing Social Housing Projects (IHS Rotterdam) and GIS (Ulster University).
+I am an urban planner and GIS specialist with experience in preparing and implementing urban infrastructure projects covering, among others, social housing, urban transport, and WASH in South and South-East Asia (Asian Infrastructure Investment Bank). In addition, I have provided policy advisory on solid waste management (World Bank) and affordable housing/resource efficiency in buildings (UN-Habitat HQ and Delhi Office). I also hold a PGDip in Public Financial Management (SOAS, University of London).
 
 <a href="/assets/img/uploads/2021 08 Gregor Herda_CV_refs removed.pdf">Download CV</a>
 
