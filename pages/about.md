@@ -14,4 +14,6 @@ I am an urban planner and GIS specialist with experience in preparing and implem
 
 <a href="/assets/img/uploads/2021 08 Gregor Herda_CV_refs removed.pdf">Download CV</a>
 
+<a href="/assets/img/uploads/2021 08 Gregor Herda_Lebenslauf_Referenzen entfernt.pdf">Lebenslauf herunterladen</a>
+
 If you think that my skillset and experience could help your project succeed, feel free to <a href="/contact/">get in touch</a>.
