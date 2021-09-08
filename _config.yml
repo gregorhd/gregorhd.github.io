@@ -1,5 +1,5 @@
 # Site Settings
-name: Home
+name: gregorhd
 title: Gregor Herda | Urban Planner and GIS Enthusiast
 description: Occasional musings on GIS, urban planning and international development.
 tags:
@@ -16,6 +16,8 @@ menu:
     url: /about
   - title: Contact
     url: /contact
+  - title: Tags
+    url: /tags
   - title: Feed
     url: /feed.xml
 email: gregorherda@gmail.com
