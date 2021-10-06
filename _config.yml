@@ -8,7 +8,7 @@ tags:
   - cities
   - urban
   - development
-show_hero: true
+show_hero: false
 menu:
   - title: Home
     url: /
