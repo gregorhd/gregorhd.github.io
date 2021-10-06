@@ -51,7 +51,7 @@ If you think that my skillset and experience could help your project succeed, fe
 
 | **Area**  |  **Skills** |
 |---|---|
-| **Computer Skills**  | Microsoft Office 365 – QGIS, ArcGIS Pro – Python (analysis and visualisations, [profile on GitHub](https://github.com/gregorhd/)) – PostgreSQL, PostGIS – GeoServer, OpenLayers – ERDAS IMAGINE/Google Earth Engine – JASP/SPSS  |
+| **Computer Skills**  | Microsoft Office 365 – QGIS, ArcGIS Pro – Python (analysis and visualisations, [profile on GitHub](https://github.com/gregorhd/)) – PostgreSQL, PostGIS – GeoServer, OpenLayers – ERDAS IMAGINE/Google Earth Engine – JASP/SPSS<br>**MOOC Certificates**: [Advanced Topics in SQL](https://courses.edx.org/certificates/2a251f2db7074b778ae5d47e510a2536) (StanfordOnline), [Python/PostgreSQL](https://www.udemy.com/certificate/UC-083f5867-1f28-41b6-93a4-617f048c5adb/) (Teclado)  |
 | **Languages**  |  **German**: Native; English: Native speaker equivalent; **Chinese**: HSK Grade Level 7; **French**: Basic |
 
 </details>
@@ -75,9 +75,9 @@ Contact details for references are provided upon request.
 
 </details>
 
-<a href="/assets/img/uploads/2021 08 Gregor Herda_CV_refs removed.pdf">Download CV</a>
+<a href="/assets/img/uploads/Gregor Herda_CV_refs removed.pdf">Download CV</a>
 
-<a href="/assets/img/uploads/2021 08 Gregor Herda_Lebenslauf_Referenzen entfernt.pdf">Lebenslauf herunterladen</a>
+<a href="/assets/img/uploads/Gregor Herda_Lebenslauf_Referenzen entfernt.pdf">Lebenslauf herunterladen</a>
 
 
 
