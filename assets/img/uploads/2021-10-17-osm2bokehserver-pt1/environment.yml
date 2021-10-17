@@ -1,0 +1,16 @@
+name: swmtool
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8.8
+  - geopandas=0.9.0
+  - cartopy=0.18.0
+  - osmnx=1.1.1
+  - spatialpandas=0.4.1
+  - geoviews=1.9.1
+  - datashader=0.13.0
+  - holoviews=1.14.4
+  - bokeh=2.3.2
+  - colorcet=2.0.6
+  - colormap=1.0.1
