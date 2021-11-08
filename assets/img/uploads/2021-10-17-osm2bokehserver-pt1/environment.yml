@@ -1,4 +1,4 @@
-name: swmtool
+name: emv
 channels:
   - conda-forge
   - defaults
