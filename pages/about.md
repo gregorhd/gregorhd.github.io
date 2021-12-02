@@ -12,7 +12,7 @@ author: gregorherda
 
 I'm an urban planner and GIS enthusiast with experience in preparing and implementing urban infrastructure projects covering, among others, social housing, urban transport, and WASH in South and South-East Asia (Asian Infrastructure Investment Bank). In addition, I have provided policy advice on solid waste management (World Bank) and affordable housing/resource efficiency in buildings (UN-Habitat HQ and Delhi Office). I also hold a PGDip in Public Financial Management (SOAS, University of London).
 
-If you think that my skillset and experience could help your project succeed, feel free to [get in touch]({% link contact.html %}).
+Feel free to [get in touch]({% link contact.html %}).
 
 <br>
 
