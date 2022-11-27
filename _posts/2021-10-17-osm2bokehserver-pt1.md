@@ -121,10 +121,10 @@ When we're done prepping the dataframe, we'll write to file using *fastparquet*.
     spd_gdf.to_parquet(parq_path)
 
 ```
-Next we'll prepare the legend and what we want our interactive map to look like. We first select a categorical color palette suitable for lighter backgrounds, here with a maximum lightness ("maxl") of 70 (further info [here](https://colorcet.holoviz.org/user_guide/Categorical.html)).
+Next we'll prepare the legend and what we want our interactive map to look like. We first select a categorical color map suitable for lighter backgrounds, here with a maximum lightness ("maxl") of 70 (further info [here](https://colorcet.holoviz.org/user_guide/Categorical.html)).
 
 We also create a dict where each category key is assigned a value composed of a three element tuple of integers representing a color in RGB format.
-This I then had to convert to hex as Bokeh was throwing errors otherwise.
+(This I then had to convert to hex as Bokeh was throwing errors otherwise.)
 
 ```python
 colors = cc.glasbey_bw_minc_20_maxl_70
@@ -154,13 +154,13 @@ hover = inspect_polygons(shaded).opts(fill_color='yellow', tools=[hover_tool])
 
 tiles = gv.tile_sources.StamenWatercolor().opts(xaxis=None, yaxis=None,active_tools=['wheel_zoom'], min_height=700, responsive=True)
 
-layout = tiles * shaded * hover * legend
+overlay = tiles * shaded * hover * legend
 
 ```
-Since we now have a layout composed of all the individual elements, we can define a server document for Bokeh Server to use and give our app a name to display in the browser tab.
+Since we now have an overlay composed of all the individual elements, we can define a server document for Bokeh Server to use and give our app a name to display in the browser tab.
 
 ```python
-doc = gv.renderer('bokeh').server_doc(layout)
+doc = gv.renderer('bokeh').server_doc(overlay)
 doc.title = 'GeoViews + Datashader + Bokeh App'
 ```
 
