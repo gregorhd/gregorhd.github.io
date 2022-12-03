@@ -45,9 +45,9 @@ _Let's assume you wanted to get a first handle on the impressive array of geospa
 
 The good news is, there are plenty of Python libraries to choose from. And the bad news? There are _plenty_ of Python libraries to choose from…
 
-Just to give you a taste, Jake Vander Plas' [excellent talk](https://www.youtube.com/watch?v=FytuB8nFHPQ) on and—meta alert!—visualisation of the Python visualisation landscape served as the basis for this (surely incomplete) mind map. Some libraries with geospatial functionalities are highlighted.
+Just to give you a taste, Jake Vander Plas' [excellent talk](https://www.youtube.com/watch?v=FytuB8nFHPQ) on and—meta alert!—visualisation of the Python visualisation landscape served as the basis for this (surely incomplete) [mind map](https://www.mindomo.com/mindmap/the-python-visualisation-landscape-dark-fd1a5c3770bdf84be045094f15ed3b7a). Some libraries with geospatial functionalities are highlighted.
 
-![Python visualisation landscape](/assets/img/uploads/2022-11-27-geospatial-visualisation-in-python/python_visualisation_landscape_dark.jpg)
+[![Python visualisation landscape](/assets/img/uploads/2022-11-27-geospatial-visualisation-in-python/python_visualisation_landscape_dark.jpg)](https://www.mindomo.com/mindmap/the-python-visualisation-landscape-dark-fd1a5c3770bdf84be045094f15ed3b7a)
 
 So again, where to start?
 
@@ -61,7 +61,7 @@ First, I tried to get a very broad overview of what's out there. I looked at var
 
 Next, I winnowed things down to a **short list**.
 
-The short list tried to include both large-community projects (e.g., [_Bokeh_](https://bokeh.org/)and [_Plotly_](https://plotly.com/python/)) as well as those relying on much fewer contributors (e.g., [_geoplot_](https://residentmario.github.io/geoplot/)). Since most help you'll need will end up coming from (largely unpaid) contributors, I figured all short-listed libraries needed to show on-going development in the last year (hence the exclusion, at the time, of [_mplleaflet_](https://github.com/jwass/mplleaflet) and [_geoplotlib_](https://github.com/andrea-cuttone/geoplotlib)). Also, to remove the confounding variable of connection speeds from my simplistic performance metric, I decided they had to be able to plot geometries without employing a Web Tile Service (hence the exclusion of [_folium_](https://python-visualization.github.io/folium/)). Finally, I was looking for a good mix of backends and both imperative as well as declarative approaches (such as [_Altair_](https://altair-viz.github.io/)), resulting in this final short list across both a static and interactive track of comparison.
+The short list tried to include both large-community projects (e.g., [_Bokeh_](https://bokeh.org/) and [_Plotly_](https://plotly.com/python/)) as well as those relying on much fewer contributors (e.g., [_geoplot_](https://residentmario.github.io/geoplot/)). Since most help you'll need will end up coming from (largely unpaid) contributors, I figured all short-listed libraries needed to show on-going development in the last year (hence the exclusion, at the time, of [_mplleaflet_](https://github.com/jwass/mplleaflet) and [_geoplotlib_](https://github.com/andrea-cuttone/geoplotlib)). Also, to remove the confounding variable of connection speeds from my simplistic performance metric, I decided they had to be able to plot geometries without employing a Web Tile Service (hence the exclusion of [_folium_](https://python-visualization.github.io/folium/)). Finally, I was looking for a good mix of backends and both imperative as well as declarative approaches (such as [_Altair_](https://altair-viz.github.io/)), resulting in this final short list across both a static and interactive track of comparison.
 
 ![Short-list of geospatial visualisation libraries](/assets/img/uploads/2022-11-27-geospatial-visualisation-in-python/short_list.jpg)
 
@@ -73,7 +73,7 @@ With our contestants selected and waiting in the wings, it was time to prepare t
 
 The battleground was a simple visualisation task performed—on my laptop—for both a "complete" dataset and a smaller subset. The complete dataset contained 144,727 polygons representing the city of [Dresden's cadastral building footprints](https://www.geodaten.sachsen.de/downloadbereich-alkis-4176.html). The subset contained 2,645 features from the same dataset.
 
-Both datasets were stored in a locally hosted PostGIS databases and queried via [GeoPandas'](https://geopandas.org/en/stable/) ``from_postgis()`` function, returning GeoDataFrames to serve as primary data inputs (more on data acquisition and preparation [here](https://github.com/gregorhd/mapcompare/blob/main/data/README.md)).
+Both datasets were stored in locally hosted PostGIS databases and queried via [GeoPandas'](https://geopandas.org/en/stable/) ``from_postgis()`` function, returning GeoDataFrames to serve as primary data inputs (more on data acquisition and preparation [here](https://github.com/gregorhd/mapcompare/blob/main/data/README.md)).
 
 The short-listed libraries were compared with regards to:
 
