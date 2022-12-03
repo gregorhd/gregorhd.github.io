@@ -26,7 +26,7 @@ author: gregorherda
 paginate: true
 ---
 
-_Let's assume you wanted to get a first handle on the impressive array of geospatial visualisation capabilities in the Python ecosystem. Where would you even **start**_?
+_Let's assume you wanted to get a first handle on the impressive array of geospatial visualisation capabilities for dealing with vector data in the Python ecosystem. Where would you even **start**_?
 
 | [**TL;DR: Jump to Graphical Abstract**](#tldr-graphical-abstract) |
 
@@ -61,7 +61,7 @@ First, I tried to get a very broad overview of what's out there. I looked at var
 
 Next, I winnowed things down to a **short list**.
 
-The short list tried to include both large-community projects (e.g., [_Bokeh_](https://bokeh.org/)and [_Plotly_](https://plotly.com/python/)) as well as those relying on much fewer contributors (e.g., [_geoplot_](https://residentmario.github.io/geoplot/)). Since most help you'll need will end up coming from (largely unpaid) contributors, I figured all short-listed libraries needed to show on-going development in the last year (hence the exclusion, at the time, of [_mplleaflet_](https://github.com/jwass/mplleaflet)and [_geoplotlib_](https://github.com/andrea-cuttone/geoplotlib)). Also, to remove the confounding variable of connection speeds from my simplistic performance metric, I decided they had to be able to plot geometries without employing a Web Tile Service (hence the exclusion of [_folium_](https://python-visualization.github.io/folium/)). Finally, I was looking for a good mix of backends and both imperative as well as declarative approaches (such as [_Altair_](https://altair-viz.github.io/)), resulting in this final short list across both a static and interactive track of comparison.
+The short list tried to include both large-community projects (e.g., [_Bokeh_](https://bokeh.org/)and [_Plotly_](https://plotly.com/python/)) as well as those relying on much fewer contributors (e.g., [_geoplot_](https://residentmario.github.io/geoplot/)). Since most help you'll need will end up coming from (largely unpaid) contributors, I figured all short-listed libraries needed to show on-going development in the last year (hence the exclusion, at the time, of [_mplleaflet_](https://github.com/jwass/mplleaflet) and [_geoplotlib_](https://github.com/andrea-cuttone/geoplotlib)). Also, to remove the confounding variable of connection speeds from my simplistic performance metric, I decided they had to be able to plot geometries without employing a Web Tile Service (hence the exclusion of [_folium_](https://python-visualization.github.io/folium/)). Finally, I was looking for a good mix of backends and both imperative as well as declarative approaches (such as [_Altair_](https://altair-viz.github.io/)), resulting in this final short list across both a static and interactive track of comparison.
 
 ![Short-list of geospatial visualisation libraries](/assets/img/uploads/2022-11-27-geospatial-visualisation-in-python/short_list.jpg)
 
@@ -73,7 +73,7 @@ With our contestants selected and waiting in the wings, it was time to prepare t
 
 The battleground was a simple visualisation task performed—on my laptop—for both a "complete" dataset and a smaller subset. The complete dataset contained 144,727 polygons representing the city of [Dresden's cadastral building footprints](https://www.geodaten.sachsen.de/downloadbereich-alkis-4176.html). The subset contained 2,645 features from the same dataset.
 
-Both datasets were stored in a locally hosted PostGIS databases and queried via [GeoPandas'](https://geopandas.org/en/stable/) ``from_postgis()`` function, returning _GeoPandas_ GeoDataFrames to serve as primary data inputs (more on data acquisition and preparation [here](https://github.com/gregorhd/mapcompare/blob/main/data/README.md)).
+Both datasets were stored in a locally hosted PostGIS databases and queried via [GeoPandas'](https://geopandas.org/en/stable/) ``from_postgis()`` function, returning GeoDataFrames to serve as primary data inputs (more on data acquisition and preparation [here](https://github.com/gregorhd/mapcompare/blob/main/data/README.md)).
 
 The short-listed libraries were compared with regards to:
 
@@ -119,7 +119,7 @@ In the interactive track, things got a bit more interesting.
 
 _Plotly.py_'s syntax was the most complex despite employing the more user friendly _Plotly Express_ interface. This is because one, apparently (?), has to write the data to disk into an intermediary [JSON file](https://plotly.com/python/mapbox-county-choropleth/). Therefore, _Plotly.py_'s line count remains high even without adding auto zoom functionality (which may be available out of the box by now).
 
-_GeoViews_ and, especially, _hvPlot_ significantly simplify interacting with _Bokeh_'s standard API, possibly at the cost of overall performance.
+_GeoViews_ and, especially, _hvPlot_ significantly simplify interacting with _Bokeh_'s standard API, with widely varying costs to overall performance.
 
 ### CPU runtime
 
@@ -134,7 +134,7 @@ Of the three [_Matplotlib_](https://matplotlib.org/)-based libraries, _Cartopy_ 
 
 The stark difference of _geoplot_'s performance to, for instance, _Cartopy_ may be due to different entry points to _Matplotlib_, which is a massively complex library at this point and thus proved too tough a nut to crack in the time available.
 
-In case you're interested: _Datashader_'s large standard deviation of 1.853 seconds with a mean of 1.564 seconds is due to its use of the [_Numba_](https://dl.acm.org/doi/abs/10.1145/2833157.2833162)compiler, which provides similar performance to a traditional compiled language. The significant performance gains materialise only after compilation in the first run which you can see very nicely below in the individual _datashader_ CPU runtimes in this 10-run loop.
+In case you're interested: _Datashader_'s large standard deviation of 1.853 seconds with a mean of 1.564 seconds is due to its use of the [_Numba_](https://dl.acm.org/doi/abs/10.1145/2833157.2833162) compiler, which provides similar performance to a traditional compiled language. The significant performance gains materialise only after compilation in the first run which you can see very nicely below in the individual _datashader_ CPU runtimes in this 10-run loop.
 
 | **run #** | **time** | **run #** | **time** |
 | --- | --- | --- | --- |
@@ -162,8 +162,8 @@ Surprising were the stark differences in runtime between the three _Bokeh_-based
 
 ## Caveats
 
-1. All of the short-listed libraries employ multiple complex technologies, some of which outside the Python ecosystem (e.g., the JavaScript libraries underlying both _Bokeh_ and _Plotly.py_). Due to these confounding variables, even with the various code adjustments mentioned above, I probably failed to establish a truly level playing field with regard to comparing CPU runtimes. What the _cProfile_ results show is simply indicative of the user experience and the approximate time required to generate a map product on screen.
-2. Lines of code is as a poor measure for code complexity. Alternatively, one could see groups of experts for each implementation develop a 'best practice' code sample, though I'm sceptical this would increase comparability (or would be feasible in practice).
+1. All of the short-listed libraries employ multiple complex technologies, some of which outside the Python ecosystem (e.g., the JavaScript libraries underlying both _Bokeh_ and _Plotly.py_). Due to these confounding variables, and even with the various code adjustments mentioned above, I most certainly failed to establish a truly level playing field with regard to comparing CPU runtimes. What the _cProfile_ results show is simply indicative of the user experience and the approximate time required to generate a map product on screen.
+2. Lines of code is a poor measure for code complexity. Alternatively, one could see groups of experts for each implementation develop a 'best practice' code sample, though I'm sceptical this would increase comparability (or would be feasible in practice).
 3. The static map products would not be considered useful outputs in most real-world scenarios: due to significant overplotting, a building-level analysis would rarely be presented at such a small representative fraction. And as for the interactive products, except for live server-side aggregation and rasterisation as demonstrated by the _GeoViews_ + _datashader_ + _Bokeh Server_ implementation, serving large quantities of geospatial data over the web would nowadays probably involve prior conversion to raster or vector tiles.
 4. The simplicity of the visualisation task meant that more advanced, and for users such as local authorities potentially more interesting, use cases such as dashboarding were not demonstrated. If this is something you'd like to explore, do check out _Bokeh_'s and _Plotly_'s native dashboarding capabilities ([Dash](https://dash.plotly.com/)) as well as HoloViz's [Panel](https://panel.holoviz.org/) library including its app gallery on [awesome-panel.org](https://awesome-panel.org/gallery) for inspiration.
 5. Due to the interconnectedness of the Python ecosystem, a library's functionalities and performance can never be solely attributed to its own codebase.
