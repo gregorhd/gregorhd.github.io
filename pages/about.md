@@ -29,7 +29,7 @@ Feel free to [get in touch]({% link contact.html %}).
 |  **11.2019 – 09.2020** | **Asian Infrastructure Investment Bank (AIIB) – Beijing, China**<br>*Investment Operations Specialist (Urban WASH, Housing, Transport and Solid Waste Management)*{::nomarkdown}{:/}  |
 | **11.2017 - 11.2019**  | **Asian Infrastructure Investment Bank (AIIB) – Beijing, China**<br>*Young Professional*{::nomarkdown}{:/} |
 | **03.2017 – 10.2017**  | **UN-Habitat, Regional Office for Asia and the Pacific – New Delhi, India**<br>*Regional Housing Advisor for UN-Habitat India, Sri Lanka, and Afghanistan Country Offices*{::nomarkdown}{:/} |
-| **11.2014 – 03.2017**  | **UN-Habitat, Housing and Slum Upgrading Branch, Housing Unit – Nairobi, Kenya  **<br>*Consultant, Sustainable Housing*{::nomarkdown}{:/}  |
+| **11.2014 – 03.2017**  | **UN-Habitat, Housing and Slum Upgrading Branch, Housing Unit – Nairobi, Kenya**<br>*Consultant, Sustainable Housing*{::nomarkdown}{:/}  |
 | **06.2014 – 10.2014**  | **UN-Habitat, Housing and Slum Upgrading Branch, Housing Unit – Nairobi, Kenya**<br>*Intern, Sustainable Housing*  |
 | **09.2008 – 09.2012**  | **2 years each working as a lecturer/interpreter in Taiyuan, China, and translator in Cork, Ireland**<br>*Intern, Sustainable Housing*  |
 
