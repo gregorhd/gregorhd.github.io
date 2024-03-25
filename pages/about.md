@@ -10,7 +10,9 @@ author: gregorherda
 
 # About me
 
-I'm an urban planner and python/GIS specialist with experience in preparing and implementing urban infrastructure projects covering, among others, social housing, urban transport, and WASH in South and South-East Asia (Asian Infrastructure Investment Bank). In addition, I have provided policy advice on solid waste management (World Bank) and affordable housing/resource efficiency in buildings (UN-Habitat HQ and Delhi Office). I also hold a PGDip in Public Financial Management (SOAS, University of London).
+I'm an urban planner and remote sensing/GIS/python specialist with experience in preparing and implementing urban infrastructure projects covering, among others, social housing, urban transport, and WASH in South and South-East Asia (Asian Infrastructure Investment Bank). In addition, I have provided policy advice on solid waste management in Nigeria for the World Bank and affordable housing/resource efficiency in buildings for UN-Habitat (HQ and Delhi Office).
+
+I hold a PGDip in Public Financial Management (SOAS, University of London), a Masters in Planning and Sustainable Development (University College Cork) and an MSc in Geographic Information Systems (Ulster University).
 
 Feel free to [get in touch]({% link contact.html %}).
 
